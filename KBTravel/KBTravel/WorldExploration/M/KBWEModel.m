@@ -7,7 +7,7 @@
 //
 
 #import "KBWEModel.h"
-
+#import "KBCountrys.h"
 @implementation KBWEModel
 
 
@@ -23,18 +23,22 @@
         self.name_cn = dic[@"name_cn"];
         self.cover = dic[@"cover"];
         self.path = dic[@"path"];
-        self.countrys = dic[@"countrys"];
+        
+        NSMutableArray *tempArray  = [NSMutableArray array];
+        for (NSDictionary *conureys in dic[@"countrys"]) {
+            
+            KBCountrys *conutry = [[KBCountrys alloc] initWithDic:conureys];
+            [tempArray addObject:conutry];
+            
+        }
+        
+        self.countrys = tempArray;
+
         
     }
     return self;
 }
 
--(void)setValue:(id)value forKey:(NSString *)key
-{
-    if ([key isEqualToString:@"id"]) {
-        _ID  = value;
-    }
-}
 
 
 @end

@@ -94,6 +94,10 @@
 		F327A7F51D351DC0004782CE /* KBWEHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F327A7F41D351DC0004782CE /* KBWEHeaderView.xib */; };
 		F327A7F81D351E81004782CE /* KBWEModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F327A7F71D351E81004782CE /* KBWEModel.m */; };
 		F327A7FB1D351F2A004782CE /* KBCountrys.m in Sources */ = {isa = PBXBuildFile; fileRef = F327A7FA1D351F2A004782CE /* KBCountrys.m */; };
+		F327A7FF1D352622004782CE /* KBWETableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F327A7FD1D352622004782CE /* KBWETableViewCell.m */; };
+		F327A8001D352622004782CE /* KBWETableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F327A7FE1D352622004782CE /* KBWETableViewCell.xib */; };
+		F327A8031D352925004782CE /* KBCellScrItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F327A8021D352925004782CE /* KBCellScrItem.m */; };
+		F327A8051D35292F004782CE /* KBCellScrItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = F327A8041D35292F004782CE /* KBCellScrItem.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -258,6 +262,12 @@
 		F327A7F71D351E81004782CE /* KBWEModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBWEModel.m; sourceTree = "<group>"; };
 		F327A7F91D351F2A004782CE /* KBCountrys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBCountrys.h; sourceTree = "<group>"; };
 		F327A7FA1D351F2A004782CE /* KBCountrys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBCountrys.m; sourceTree = "<group>"; };
+		F327A7FC1D352622004782CE /* KBWETableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBWETableViewCell.h; sourceTree = "<group>"; };
+		F327A7FD1D352622004782CE /* KBWETableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBWETableViewCell.m; sourceTree = "<group>"; };
+		F327A7FE1D352622004782CE /* KBWETableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KBWETableViewCell.xib; sourceTree = "<group>"; };
+		F327A8011D352925004782CE /* KBCellScrItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBCellScrItem.h; sourceTree = "<group>"; };
+		F327A8021D352925004782CE /* KBCellScrItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBCellScrItem.m; sourceTree = "<group>"; };
+		F327A8041D35292F004782CE /* KBCellScrItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KBCellScrItem.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -646,6 +656,12 @@
 			isa = PBXGroup;
 			children = (
 				F327A7E41D351974004782CE /* 123123123123 */,
+				F327A7FC1D352622004782CE /* KBWETableViewCell.h */,
+				F327A7FD1D352622004782CE /* KBWETableViewCell.m */,
+				F327A7FE1D352622004782CE /* KBWETableViewCell.xib */,
+				F327A8011D352925004782CE /* KBCellScrItem.h */,
+				F327A8021D352925004782CE /* KBCellScrItem.m */,
+				F327A8041D35292F004782CE /* KBCellScrItem.xib */,
 				F327A7F11D351DB7004782CE /* KBWEHeaderView.h */,
 				F327A7F21D351DB7004782CE /* KBWEHeaderView.m */,
 				F327A7F41D351DC0004782CE /* KBWEHeaderView.xib */,
@@ -951,9 +967,11 @@
 				F327A6C31D34F947004782CE /* Assets.xcassets in Resources */,
 				F327A7F51D351DC0004782CE /* KBWEHeaderView.xib in Resources */,
 				F327A7E11D351968004782CE /* 123123132 in Resources */,
+				F327A8001D352622004782CE /* KBWETableViewCell.xib in Resources */,
 				F327A7D91D351949004782CE /* 123123123 in Resources */,
 				F327A78E1D34FCBA004782CE /* MJRefresh.bundle in Resources */,
 				F327A7E31D35196E004782CE /* 123123123 in Resources */,
+				F327A8051D35292F004782CE /* KBCellScrItem.xib in Resources */,
 				F327A7D51D35193D004782CE /* 34423 in Resources */,
 				F327A7E91D351980004782CE /* 123123123 in Resources */,
 				F327A7E71D35197A004782CE /* 123123123 in Resources */,
@@ -974,6 +992,7 @@
 				F327A7901D34FCBA004782CE /* UIScrollView+MJExtension.m in Sources */,
 				F327A7B61D350984004782CE /* KBSetViewController.m in Sources */,
 				F327A79B1D34FDB7004782CE /* XHZoomDrawerView.m in Sources */,
+				F327A7FF1D352622004782CE /* KBWETableViewCell.m in Sources */,
 				F327A7C91D350FDC004782CE /* MenuViewController.m in Sources */,
 				F327A7CD1D35163C004782CE /* KBTools.m in Sources */,
 				F327A7821D34FCBA004782CE /* MJRefreshComponent.m in Sources */,
@@ -1031,6 +1050,7 @@
 				F327A7F31D351DB7004782CE /* KBWEHeaderView.m in Sources */,
 				F327A78D1D34FCBA004782CE /* MJRefreshStateHeader.m in Sources */,
 				F327A6B81D34F947004782CE /* main.m in Sources */,
+				F327A8031D352925004782CE /* KBCellScrItem.m in Sources */,
 				F327A7911D34FCBA004782CE /* UIScrollView+MJRefresh.m in Sources */,
 				F327A7801D34FCBA004782CE /* MJRefreshAutoFooter.m in Sources */,
 				F327A70F1D34FC36004782CE /* JSONModelClassProperty.m in Sources */,
@@ -1178,6 +1198,7 @@
 				F327A6CC1D34F947004782CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

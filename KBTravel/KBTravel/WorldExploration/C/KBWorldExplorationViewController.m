@@ -9,6 +9,10 @@
 #import "KBWorldExplorationViewController.h"
 #import "KBWEHeaderView.h"
 #import "KBWEModel.h"
+#import "KBWETableViewCell.h"
+
+#define KROWheight 60
+
 @interface KBWorldExplorationViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView *tableView;
@@ -36,6 +40,9 @@
     
     self.tableView  =[[UITableView alloc] initWithFrame:self.view.bounds];
     self.tableView.separatorStyle = UITableViewCellSelectionStyleNone;
+    self.tableView.y += 64;
+    self.tableView.height -= 64;
+    [self.tableView registerClass:[KBWETableViewCell class] forCellReuseIdentifier:@"cell"];
     self.tableView.backgroundColor = [UIColor clearColor];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
@@ -74,11 +81,9 @@
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleValue1) reuseIdentifier:@"cell"];
-    }
-    
+    KBWETableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    KBWEModel *model = self.continents[indexPath.section];
+    cell.countrys = model.countrys;
     cell.backgroundColor = [UIColor clearColor];
     
     return cell;
@@ -96,10 +101,14 @@
     return headerView;
 }
 
+- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 100;
+}
 
 - (CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 60;
+    return KROWheight;
 }
 
 

@@ -10,12 +10,21 @@
 
 @implementation KBCountrys
 
--(void)setValue:(id)value forKey:(NSString *)key
+- (instancetype) initWithDic:(NSDictionary *) dic
 {
-    if ([key isEqualToString:@"id"]) {
-        _ID  = value;
+    if (self = [super init]) {
+        
+        self.ID = dic[@"id"];
+        self.type = dic[@"type"];
+        self.continentId = dic[@"continentId"];
+        self.countryId = dic[@"countryId"];
+        self.name = dic[@"name"];
+        self.name_cn = dic[@"name_cn"];
+        self.cover = dic[@"cover"];
+        self.capitalId = dic[@"capitalId"];
+        
     }
+    return self;
 }
-
 
 @end

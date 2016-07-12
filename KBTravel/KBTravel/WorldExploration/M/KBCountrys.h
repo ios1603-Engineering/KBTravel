@@ -6,9 +6,9 @@
 //  Copyright © 2016年 tarena. All rights reserved.
 //
 
-#import "JSONModel.h"
+#import <Foundation/Foundation.h>
 
-@interface KBCountrys : JSONModel
+@interface KBCountrys : NSObject
 
 @property (nonatomic,strong) NSString *ID;
 
@@ -26,5 +26,7 @@
 
 @property (nonatomic,strong) NSNumber *capitalId;
 
+
+- (instancetype) initWithDic:(NSDictionary *) dic;
 
 @end
