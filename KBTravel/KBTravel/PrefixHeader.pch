@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  KBTravel
+//
+//  Created by tarena04 on 16/7/12.
+//  Copyright © 2016年 tarena. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+Extension.h"
+#import "UIImageView+AFNetworking.h"
+#import "MJRefresh.h"
+#import "AFNetworking.h"
+#import "JSONModel.h"
+#import "KBTools.h" //工具类
+#import "XHDrawerController.h"// 侧边栏三方框架
+#import "KBJSON.h"
+#endif /* PrefixHeader_pch */
